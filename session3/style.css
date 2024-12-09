@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(64, 21, 183, 0.732), rgba(214, 88, 151, 0.709));
+}
+
+table{
+    width: 99%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    background-color: aliceblue;
+    overflow-y: auto;
+}
+
+th, td{
+    margin-top: 20px;
+    padding: 8px;
+    text-align: center;
+}
+
+.table-caption{
+    display: table-caption;
+    font-size: 70px;
+    font-family: sans-serif;
+    color: rgb(241, 251, 241);
+    margin-bottom: 40px;
+}
+
+.table-wrapper{
+    margin-top: 5%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.table-header{
+    background-color: rgb(40, 34, 34);
+    border-radius: 100px;
+}
+
+.table-header th{
+    color: antiquewhite;
+}
+
+.table-date-grey{
+    background-color: rgba(128, 128, 128, 0.135);
+}
+
+@media(max-width: 600px) {
+    .table-caption{
+        display: none;
+    }
+
+    .table::after {
+        content: "For Phone";
+        display: block;
+        text-align: center;
+        color: red; /* Customize as needed */
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
