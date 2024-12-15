@@ -1,0 +1,139 @@
+@font-face {
+    font-family: lexend;
+    src: url(./font/Lexend/Lexend-VariableFont_wght.ttf), format(truetype);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131D24;
+}
+
+table {
+    font-family: 'lexend';
+    border-collapse: collapse;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+
+    background-color: #1A1A1A;
+}
+
+tbody,
+thead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+.table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+    padding: 16px;
+
+}
+
+.table-header-content {
+    display: flex;
+    width: 254px;
+    gap: 10px;
+    align-items: center;
+    font-size: 16px;
+    color: #999999;
+    font-weight: 700;
+}
+
+.table-header-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.table-main-data {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+}
+
+.table-main-data img {
+    width: 36px;
+    height: 36px;
+    border-radius: 100px;
+}
+
+
+.table-main-content {
+    width: 254px;
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.table-date-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.name,
+.ability-col,
+.rating-col,
+.detail-col {
+    color: #E6E6E6;
+}
+
+.gmail {
+    color: #7F7F7F;
+}
+
+.update-col {
+    border-radius: 50%;
+    border: 8px solid red;
+
+    transition: 1s ease;
+}
+
+.update-col:hover {
+    border: 8px solid green;
+}
+
+.table-main-content button {
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: transparent;
+    border: none;
+
+    background-color: #FCC3C3;
+    font-size: 14px;
+
+    display: flex;
+    gap: 8px;
+
+    transition: 1s ease;
+}
+
+.table-main-content button:hover {
+    padding: 15px 15px;
+}
+
+
+/* I used this to center my last elemnt in the last column */
+.saba {
+    justify-content: center;
+}
