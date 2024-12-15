@@ -57,6 +57,7 @@ td {
     font-weight: 700;
 }
 
+
 .table-header-content-wrapper {
     display: flex;
     flex-direction: column;
@@ -69,6 +70,11 @@ td {
     align-items: center;
     justify-content: space-around;
     height: 80px;
+    transition: .5s ease;
+}
+
+.table-main-data:hover{
+    background-color: #e6e6e650;
 }
 
 .table-main-data img {
