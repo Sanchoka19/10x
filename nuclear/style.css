@@ -59,6 +59,20 @@ header {
 header .company-name {
     font-size: 28px;
     font-weight: 1000;
+    animation: text-resize 1s infinite;
+    cursor: pointer;
+}
+
+@keyframes text-resize{
+    0%{
+        scale:1;
+    }
+    50%{
+        scale:1.2;
+    }
+    100%{
+        scale: 1;
+    }
 }
 
 
@@ -107,6 +121,7 @@ header nav ul li img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 
     overflow: hidden;
 
@@ -114,6 +129,96 @@ header nav ul li img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.pulse{
+    background-color: #ffffff4a;
+    padding: 4px;
+    border-radius: 50%;
+    position: absolute;
+    left: 200px;
+    top: 750px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.pulse:hover{
+    animation: pulse 1s infinite;
+}
+
+.pulse-item1{
+    background-color: #ffffffc2;
+    border-radius: 50%;
+    padding: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pulse-item2 {
+    background-color: #ffffff4a;
+    border-radius: 50%;
+    padding: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pulse2{
+    background-color: #ffffff4a;
+    padding: 4px;
+    border-radius: 50%;
+    position: absolute;
+    right: 809px;
+    top: 750px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+}
+
+.pulse2:hover{
+    animation: pulse 1s infinite;
+}
+
+.pulse2-item1{
+    background-color: #ffffffc2;
+    border-radius: 50%;
+    padding: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pulse2-item2 {
+    background-color: #ffffffc2;
+    border-radius: 50%;
+    padding: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 
